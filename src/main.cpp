@@ -9,7 +9,10 @@ int main()
     cv::Mat Frame1, Frame2, FrameCon1;
     cv::Mat Frame3, Frame4, FrameCon2, FrameTotal;
     cv::Mat FrameE(480, 640, CV_8UC3, cv::Scalar(128,128,128));  //a gray frame
-
+    //
+    /// In this example, 4 cameras are used. This is not necessary. 
+    /// You can control any number, one, two or, for example, six. It does not matter.    
+    //
     ThreadCam *Grb1, *Grb2, *Grb3, *Grb4;
 
     Grb1 = new ThreadCam();
