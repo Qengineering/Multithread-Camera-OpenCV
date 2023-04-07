@@ -71,7 +71,7 @@ int main()
         char esc = cv::waitKey(5);
         if(esc == 27) break;
     }
-
+    /// Gracefully, terminate the threads.
     Grb1->Quit();
     Grb2->Quit();
     Grb3->Quit();
