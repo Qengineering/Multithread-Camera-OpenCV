@@ -1,4 +1,4 @@
-# Multi thread cameras in OpenCV (with neglectable latency)
+# Multithread cameras in OpenCV (with neglectable latency)
 ![output image]( https://qengineering.eu/github/MultiCamCodeBlocks.webp )<br>
 ### RTSP - UDP - TCP streams 
 It is a known issue with RTSP streams and time-consuming algorithms such as deep learning frameworks. You're getting out of sync if individual frames take longer than your stream's frame rate to process. There is an increasing delay between reality and the captured images.<br><br>
