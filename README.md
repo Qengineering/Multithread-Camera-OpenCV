@@ -34,7 +34,7 @@ If you want to stream UDP or TCP, are sure the streams work with the command lin
 ## Running the app.
 To run the application load the project file MultiThread.cbp in Code::Blocks.<br><br> 
 If you are using a **Jetson Nano**, you have to change the location where OpenCV has stored its header files to `/usr/include/opencv4`<br><br>
-At line 20 in main.cpp the stream is defined.
+At line 23 in main.cpp the stream is defined.
 #### RTSP
 ```
 Grb1->Init("rtsp://192.168.178.129:8554/test/");
