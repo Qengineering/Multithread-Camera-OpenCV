@@ -23,8 +23,7 @@ To run the application, you have to:
 Use only a ***wired*** Ethernet connection for your RTSP stream. Wi-Fi can be unstable.<br>
 Because the RTSP protocol is sensitive to even just one missing frame, the stream can easily crash.<br><br>
 If you are using the stream in a deep learning app, adjust your resolution and frame rate to the requirements of the deep learning model.<br>
-It is not a good idea to send a 1280x960 stream at 30 FPS if your model has a 416x416 input and takes 200 mSec to process a single frame.<br>
-It only costs extra memory and processing power.<br><br>
+It is not a good idea to send a 1280x960 stream at 30 FPS if your model has a 416x416 input and takes 200 mSec to process a single frame. It only costs extra memory and processing power.<br><br>
 Make sure all cameras have the same resolution. In the example, the OpenCV concatenate algorithm is sensitive to different resolutions. It throws an exception when it faces different widths or heights.<br><br>
 Please note that the cameras are not synchronized with each other by the threads. They may have slightly different lags.<br><br>
 If you want to stream UDP or TCP, are sure the streams work with the command line prompt beforehand. If not, they certainly won't work in OpenCV. Often errors are caused by the coding in the pipeline, the addresses or missing modules. If you need to install additional GStreamer modules, you'll need to rebuild your OpenCV also! For more information, see our [website](https://qengineering.eu/install-gstreamer-1.18-on-raspberry-pi-4.html).
