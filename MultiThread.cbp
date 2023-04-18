@@ -40,8 +40,6 @@
 			<Add option="`pkg-config --libs --cflags opencv4`" />
 			<Add option="-lpthread" />
 		</Linker>
-		<Unit filename="../YoloRpiCam/include/MJPG_sender.h" />
-		<Unit filename="../YoloRpiCam/src/MJPG_sender.cpp" />
 		<Unit filename="include/ThreadCam.h" />
 		<Unit filename="src/ThreadCam.cpp" />
 		<Unit filename="src/main.cpp" />
