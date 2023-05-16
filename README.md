@@ -3,7 +3,7 @@
 ### RTSP - UDP - TCP streams 
 It is a known issue with RTSP streams and time-consuming algorithms such as deep learning frameworks. You're getting out of sync if individual frames take longer than your stream's frame rate to process. There is an increasing delay between reality and the captured images.<br><br>
 There are two possible solutions to this problem.<br>
-* You could determine the missed images and skip them before grabbing a new frame. This solution is [implemented here](https://github.com/Qengineering/RTSP-with-OpenCV).<br>
+* You could determine the missed images and skipping them before grabbing a new frame. This solution is [implemented here](https://github.com/Qengineering/RTSP-with-OpenCV).<br>
 * Or you can continuously grabbing images in a seperated thread. This way, it is possible to connect more than one camera to your application.<br><br>
 
 The code speaks for itself. You can either use GStreamer of FFmpeg to open the stream.<br>
