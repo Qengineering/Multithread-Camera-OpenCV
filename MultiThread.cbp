@@ -34,7 +34,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 			<Add directory="/usr/local/include/opencv4" />
-			<Add directory="/home/pi/software/YoloRpiCam/include" />
+			<Add directory="include" />
 		</Compiler>
 		<Linker>
 			<Add option="`pkg-config --libs --cflags opencv4`" />
